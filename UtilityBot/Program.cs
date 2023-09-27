@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Telegram.Bot;
 
-namespace VoiceTexterBot
+namespace UtilityBot
 {
     public class Program
     {
@@ -19,16 +19,17 @@ namespace VoiceTexterBot
                 .UseConsoleLifetime() // Позволяет поддерживать приложение активным в консоли
                 .Build(); // Собираем
 
-            Console.WriteLine("Сервис запущен");
+            Console.WriteLine($"[{DateTime.Now}] Сервис запущен");
             // Запускаем сервис
             await host.RunAsync();
-            Console.WriteLine("Сервис остановлен");
+            Console.WriteLine($"[{DateTime.Now}] Сервис остановлен");
         }
 
         static void ConfigureServices(IServiceCollection services)
         {
             // Регистрируем объект TelegramBotClient c токеном подключения
-            services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("6054939968:AAETmF808oHMe60nT94rEdiVjFJoM_wxOTQ"));
+            services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("6383723323:AAGjEgRMV81yHBEmt4hGru9QoIFXTrlJLjM"));
+            
             // Регистрируем постоянно активный сервис бота
             services.AddHostedService<Bot>();
         }

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceTexterBot", "VoiceTexterBot\VoiceTexterBot.csproj", "{35A2AF8D-79F3-4FB1-87ED-C97BC27E835D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityBot", "UtilityBot\UtilityBot.csproj", "{0A4A8EC3-E847-4939-B71C-21F50003F1C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{35A2AF8D-79F3-4FB1-87ED-C97BC27E835D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35A2AF8D-79F3-4FB1-87ED-C97BC27E835D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35A2AF8D-79F3-4FB1-87ED-C97BC27E835D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A4A8EC3-E847-4939-B71C-21F50003F1C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4A8EC3-E847-4939-B71C-21F50003F1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4A8EC3-E847-4939-B71C-21F50003F1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4A8EC3-E847-4939-B71C-21F50003F1C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
