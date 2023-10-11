@@ -24,7 +24,7 @@ namespace VoiceTexterBot.Controllers
             {
                 case "/start":
 
-                    // Объект, представляющий кноки
+                    // Объект, представляющий кнопки
                     var buttons = new List<InlineKeyboardButton[]>();
                     buttons.Add(new[]
                     {

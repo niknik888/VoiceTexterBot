@@ -47,13 +47,21 @@ namespace VoiceTexterBot
             // Регистрируем хранилище сессий
             services.AddSingleton<IStorage, MemoryStorage>();
 
+            // Регистрируем обработчик аудиофайлов
+            services.AddSingleton<IFileHandler, AudioFileHandler>();
+
         }
 
         static AppSettings BuildAppSettings()
         {
             return new AppSettings()
             {
-                BotToken = "6054939968:AAETmF808oHMe60nT94rEdiVjFJoM_wxOTQ"
+                BotToken = "6514111765:AAErwNT56q6upNWsR4i_1AaqRUwfqS_-BV8",
+                DownloadsFolder = "C:\\Users\\Administrator\\source\\repos\\VoiceTexterBot\\Downloads",
+                AudioFileName = "audio",
+                InputAudioFormat = "ogg",
+                OutputAudioFormat = "wav",
+                InputAudioBitrate = 16000
             };
         }
     }
